@@ -1,0 +1,93 @@
+.project {
+    min-height: 65vh;
+    width: 100%;
+    margin: 0;
+    background-color: #f3f4f6;
+    padding: 2rem 0;
+}
+
+.project-title {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P';
+}
+
+.project-container {
+    margin: 0 5%;
+}
+
+.project-latest {
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Press Start 2P';
+    color: rgb(15, 31, 175);
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.project-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.427);
+    padding: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.project-txt {
+    width: 100%;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    font-family: 'Press Start 2P';
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .project-latest {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-latest {
+        font-size: 1.1rem;
+    }
+}
