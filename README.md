@@ -6,7 +6,7 @@ this personal project started on the 2nd of October 2024
 
 ## website url
 
-[https://hoac0.github.io/hoa-chau-portfolio/](https://hoac0.github.io/hoa-chau-portfolio/)
+https://hoachau.de
 
 ## Description
 
