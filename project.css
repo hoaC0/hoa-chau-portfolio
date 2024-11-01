@@ -14,8 +14,20 @@
     font-family: 'Press Start 2P';
 }
 
+/* responsive font size for project title */
+.project-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
 .project-container {
     margin: 0 5%;
+}
+
+/* max-width and centered container */
+.project-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 5vw, 4rem);
 }
 
 .project-latest {
@@ -31,6 +43,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+}
+
+/* grid responsiveness */
+.project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-wrapper {

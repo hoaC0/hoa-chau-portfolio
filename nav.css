@@ -24,12 +24,22 @@ nav {
     padding-right: 0.5rem;
 }
 
+/* responsive padding */
+.navbar {
+    padding: 1rem clamp(0.5rem, 3vw, 2rem);
+}
+
 .logo {
     font-family: 'Press Start 2P';
     font-size: 1.5rem;
     font-weight: bold;
 
     cursor: pointer;
+}
+
+/* font size for logo */
+.logo {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .navigation-links {
@@ -99,5 +109,13 @@ i {
 @media (min-width: 1024px) {
     li {
         font-size: 0.9rem;
+    }
+}
+
+/*  larger screens */
+@media (min-width: 1200px) {
+    .navbar {
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }

@@ -30,6 +30,11 @@
     margin: 0 5%;
 }
 
+/* responsive font size */
+.tooltech_title {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
 .tech {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,6 +44,11 @@
     border-radius: 20px;
     border: 2px solid rgba(0, 0, 0, 0.427);
     padding: 1rem;
+}
+
+/* improved grid responsiveness */
+.tech {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .tool-wrapper {
@@ -103,5 +113,13 @@
 
     .tool-tech {
         font-size: 0.9rem;
+    }
+}
+
+/* larger screens*/
+@media (min-width: 1200px) {
+    .tooltech_wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }
