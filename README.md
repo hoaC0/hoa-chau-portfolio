@@ -12,13 +12,13 @@ https://hoachau.de
 
 This portfolio website serves as a digital resume and project showcase. It features a clean, modern design with smooth animations and a responsive layout. The site is built using HTML and CSS. 
 
-In the future I'll also be adding some functions ( JavaScript )
 
 
 ## features
 
 - Responsive design that works well on desktop and mobile devices
 - Smooth scrolling navigation
+- typing and delete effect
 - Interactive project cards with hover effects
 - Skills section
 - Contact form for easy communication ( without backend )
