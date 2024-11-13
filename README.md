@@ -10,7 +10,7 @@ https://hoachau.de
 
 ## Description
 
-This portfolio website serves as a digital resume and project showcase. It features a clean, modern design with smooth animations and a responsive layout. The site is built using HTML and CSS. 
+This portfolio website serves as a digital resume and project showcase. It features a clean, modern design with smooth animations and a responsive layout. The site is built using HTML,CSS und JavaScript. 
 
 
 
