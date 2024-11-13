@@ -47,12 +47,62 @@
       <section class="intro" id="intro">
         <div class="container">
           <h1 class="Hi">Hey there,I'm Hoa</h1>
-          <p class="iAM">I am a student, aiming to <br>become a <span>software developer</span></p>
-          <button class="btn">Resume</button>
+          <p class="iAM">I am a student, aiming to <br>become a <span id="text">software developer</span><span id="cursor">|</span></p>
+          <a href="Lebenslauf - Hoa Chau.pdf" target="_blank" class="btn">Resume</a>
         </div>
         <div class="placeholder1"></div>
       </section>
     </main>
+
+    <script>
+      const textElement = document.getElementById("text");
+      const cursorElement = document.getElementById("cursor");
+      const phrases = ["Software Developer", "Software Engineer", "Web Developer"];
+      let currentPhraseIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+      const typingSpeed = 150; // milliseconds per character when typing
+      const deletingSpeed = 100; // milliseconds per character when deleting
+      const pauseTime = 1000; // pause time in milliseconds before deleting
+  
+      function type() {
+        const currentPhrase = phrases[currentPhraseIndex];
+        
+        if (isDeleting) {
+          // removes characters
+          textElement.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+          currentCharIndex--;
+  
+          if (currentCharIndex === 0) {
+            isDeleting = false;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            setTimeout(type, typingSpeed);
+          } else {
+            setTimeout(type, deletingSpeed);
+          }
+        } else {
+          // adds characters
+          textElement.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+          currentCharIndex++;
+  
+          if (currentCharIndex === currentPhrase.length) {
+            isDeleting = true;
+            setTimeout(type, pauseTime);
+          } else {
+            setTimeout(type, typingSpeed);
+          }
+        }
+      }
+  
+      function blinkCursor() {
+        cursorElement.style.visibility = cursorElement.style.visibility === 'visible' ? 'hidden' : 'visible';
+      }
+  
+      // start the typing effect and cursor blinking
+      type();
+      setInterval(blinkCursor, 500); // blinking cursor every 500 ms
+    </script>
+  
 
     <!-- About Me -->
     <section class="about" id="about">
@@ -147,6 +197,7 @@
       <div class="project-container">
       <h2 class="project-latest">What I have built recently...</h2>
         <div class="project-grid">
+
           <div class="project-wrapper"><img src="practice-portfolio.png" alt="" class="project-img"><div class="project-txt">Practice Portfolio Website</div>
           <div class="project-description">A simple portfolio site I put together to practice my HTML and CSS skills. It's got the basics - a spot for projects, my skills, and how to contact me.</div>
           <a href="https://github.com/hoaC0/practice-portfolio" target="_blank" class="project-github-link">
@@ -176,6 +227,7 @@
           <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsam repellendus? Magni non eaque aperiam at illo dignissimos eveniet modi possimus nisi assumenda minus unde aspernatur, fugit quas cumque repellat!</div>
           <a href="https://github.com/hoaC0/project1" target="_blank" class="project-github-link">
           <img src="coding.png" alt="View code on GitHub" class="coding-icon"></a></div>
+        
         </div>
       </div>
     </section>
