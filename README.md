@@ -42,14 +42,8 @@ This portfolio website serves as a digital resume and project showcase. It featu
 - Google Fonts
 - API by Web3Forms for contact form
 
-## setup and Deployment
-
-This website is deployed using GitHub Pages. To set up a similar project:
-
-1. Clone this repository
-2. Modify the HTML, CSS, and JavaScript files to personalize the content
-3. Push the changes to your GitHub repository
-4. Enable GitHub Pages in your repository settings
+## future changes
+- Redesign of the Tools and Tech Section, since it's a "mess" and I'm not happy with it yet
 
 ## contact
 
